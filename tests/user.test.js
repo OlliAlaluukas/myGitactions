@@ -13,7 +13,7 @@ describe('GET /', () => {
     
     const mockUsers = [{ name: 'John Doe', age: 30 }, { name: 'Jane Doe', age: 25 }];
     user.getAllUsers.mockImplementation((callback) => {
-      callback(mockUsers);
+      callback(mockUsers.name);
     });
 
     
