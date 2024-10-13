@@ -8,7 +8,7 @@ router.get('/:a?/:b?', function(req, res, next) {
         let b=parseInt(req.params.b);
         
         if(typeof a === 'number' && isFinite(a) && (typeof b === 'number' && isFinite(a))){
-            result=a+b+1;
+            result=a+b;
         }
         else {
             result="Both variables should be numerical";
